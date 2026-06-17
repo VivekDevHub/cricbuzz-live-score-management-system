@@ -7,6 +7,7 @@ import z from "zod";
 const envSchema = z.object({
  PORT: z.coerce.number(), // coerce typecast kar dega waha se string aayega toh number me convert kar dega
  MONGO_URL: z.string(),
+ NODE_ENV: z.string(),
 });
 
 const parsed = envSchema.parse(process.env); //parse kiya object mil jayega
