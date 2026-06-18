@@ -1,13 +1,15 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+import appConstant from "../constant/app.constant.js";
 import z from "zod";
 //zod data validation hai iska use karke env data ko validate kr rhe hai string hai ki number hai aisa
 
 const envSchema = z.object({
- PORT: z.coerce.number(), // coerce typecast kar dega waha se string aayega toh number me convert kar dega
- MONGO_URL: z.string(),
- NODE_ENV: z.string(),
+ PORT: z.coerce.number().default(appConstant.PORT), // coerce typecast kar dega waha se string aayega toh number me convert kar dega
+ MONGO_URL: z.string().default(appConstant.MONGO_URL),
+ NODE_ENV: z.string().default(appConstant.NODE_ENV),
+ LOGGER_LEVEL: z.string().default(appConstant.LOGGER_LEVEL)
 });
 
 const parsed = envSchema.parse(process.env); //parse kiya object mil jayega
