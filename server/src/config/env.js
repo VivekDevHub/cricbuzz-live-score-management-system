@@ -6,16 +6,17 @@ import z from "zod";
 //zod data validation hai iska use karke env data ko validate kr rhe hai string hai ki number hai aisa
 
 const envSchema = z.object({
- PORT: z.coerce.number().default(appConstant.PORT), // coerce typecast kar dega waha se string aayega toh number me convert kar dega
- MONGO_URL: z.string().default(appConstant.MONGO_URL),
- NODE_ENV: z.string().default(appConstant.NODE_ENV),
- LOGGER_LEVEL: z.string().default(appConstant.LOGGER_LEVEL)
+  PORT: z.coerce.number().default(appConstant.PORT), // coerce typecast kar dega waha se string aayega toh number me convert kar dega
+  MONGO_URL: z.string().default(appConstant.MONGO_URL),
+  NODE_ENV: z.string().default(appConstant.NODE_ENV),
+  LOGGER_LEVEL: z.string().default(appConstant.LOGGER_LEVEL),
 });
 
 const parsed = envSchema.parse(process.env); //parse kiya object mil jayega
 
-if (!parsed) { // for empty object
-   console.log("check your env");
+if (!parsed) {
+  // for empty object
+  console.log("check your env");
 }
 
 export default parsed;
@@ -33,4 +34,3 @@ hain aur response time affect ho sakta hai. Isliye production-grade
 applications me structured logging libraries jaise Pino ya Winston use
 karte hain, jahan log levels, log rotation aur monitoring support milta hai.
 */
-
