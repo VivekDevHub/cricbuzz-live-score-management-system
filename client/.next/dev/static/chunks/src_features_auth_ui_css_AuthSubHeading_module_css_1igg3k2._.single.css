@@ -1,0 +1,28 @@
+/* [project]/src/features/auth/ui/css/AuthSubHeading.module.css [app-client] (css) */
+.AuthSubHeading-module__SWoAfG__subHeading {
+  color: #667085;
+  max-width: 420px;
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.AuthSubHeading-module__SWoAfG__subHeading strong {
+  color: #0c9c41;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .AuthSubHeading-module__SWoAfG__subHeading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AuthSubHeading-module__SWoAfG__subHeading {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_AuthSubHeading_module_css_1igg3k2._.single.css.map*/

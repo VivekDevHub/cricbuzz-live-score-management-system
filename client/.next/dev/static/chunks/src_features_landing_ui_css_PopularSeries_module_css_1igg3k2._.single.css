@@ -1,0 +1,240 @@
+/* [project]/src/features/landing/ui/css/PopularSeries.module.css [app-client] (css) */
+.PopularSeries-module__eh0s2W__section {
+  background: #fff;
+  padding: 80px 60px;
+  overflow: hidden;
+}
+
+.PopularSeries-module__eh0s2W__header {
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 42px;
+  animation: .8s forwards PopularSeries-module__eh0s2W__fadeUp;
+  display: flex;
+}
+
+.PopularSeries-module__eh0s2W__label {
+  color: #059669;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.PopularSeries-module__eh0s2W__header h2 {
+  color: #020617;
+  letter-spacing: -1px;
+  font-size: 42px;
+}
+
+.PopularSeries-module__eh0s2W__viewButton {
+  cursor: pointer;
+  color: #000;
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 26px;
+  font-weight: 700;
+  transition: all .3s;
+  box-shadow: 0 8px 22px #0f172a14;
+}
+
+.PopularSeries-module__eh0s2W__viewButton:hover {
+  color: #fff;
+  background: #059669;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px #05966940;
+}
+
+.PopularSeries-module__eh0s2W__cards {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+  display: grid;
+}
+
+.PopularSeries-module__eh0s2W__card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  transition: all .35s;
+  animation: .8s forwards PopularSeries-module__eh0s2W__fadeUp;
+  overflow: hidden;
+  box-shadow: 0 12px 32px #0f172a14;
+}
+
+.PopularSeries-module__eh0s2W__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 50px #0f172a26;
+}
+
+.PopularSeries-module__eh0s2W__imageBox {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.PopularSeries-module__eh0s2W__imageBox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform .5s;
+}
+
+.PopularSeries-module__eh0s2W__card:hover .PopularSeries-module__eh0s2W__imageBox img {
+  transform: scale(1.08);
+}
+
+.PopularSeries-module__eh0s2W__liveBadge, .PopularSeries-module__eh0s2W__upcomingBadge {
+  z-index: 2;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.PopularSeries-module__eh0s2W__liveBadge {
+  color: #fff;
+  background: #10b981;
+  animation: 1.8s infinite PopularSeries-module__eh0s2W__pulse;
+}
+
+.PopularSeries-module__eh0s2W__upcomingBadge {
+  color: #64748b;
+  background: #fff;
+}
+
+.PopularSeries-module__eh0s2W__content {
+  padding: 24px;
+}
+
+.PopularSeries-module__eh0s2W__content h3 {
+  color: #020617;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.PopularSeries-module__eh0s2W__content p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+@keyframes PopularSeries-module__eh0s2W__fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes PopularSeries-module__eh0s2W__pulse {
+  0%, 100% {
+    box-shadow: 0 0 #10b98173;
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px #10b98100;
+  }
+}
+
+@media (max-width: 1100px) {
+  .PopularSeries-module__eh0s2W__section {
+    padding: 70px 40px;
+  }
+
+  .PopularSeries-module__eh0s2W__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .PopularSeries-module__eh0s2W__section {
+    padding: 55px 20px;
+  }
+
+  .PopularSeries-module__eh0s2W__label {
+    text-align: center;
+  }
+
+  .PopularSeries-module__eh0s2W__desc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .PopularSeries-module__eh0s2W__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+
+  .PopularSeries-module__eh0s2W__header h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .PopularSeries-module__eh0s2W__viewButton {
+    text-align: center;
+    width: 100%;
+  }
+
+  .PopularSeries-module__eh0s2W__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .PopularSeries-module__eh0s2W__imageBox {
+    height: 230px;
+  }
+
+  .PopularSeries-module__eh0s2W__content {
+    padding: 20px;
+  }
+
+  .PopularSeries-module__eh0s2W__content h3 {
+    font-size: 17px;
+  }
+
+  .PopularSeries-module__eh0s2W__content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .PopularSeries-module__eh0s2W__header h2 {
+    font-size: 28px;
+  }
+
+  .PopularSeries-module__eh0s2W__label {
+    text-align: center;
+  }
+
+  .PopularSeries-module__eh0s2W__desc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .PopularSeries-module__eh0s2W__imageBox {
+    height: 200px;
+  }
+
+  .PopularSeries-module__eh0s2W__liveBadge, .PopularSeries-module__eh0s2W__upcomingBadge {
+    font-size: 11px;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+/*# sourceMappingURL=src_features_landing_ui_css_PopularSeries_module_css_1igg3k2._.single.css.map*/

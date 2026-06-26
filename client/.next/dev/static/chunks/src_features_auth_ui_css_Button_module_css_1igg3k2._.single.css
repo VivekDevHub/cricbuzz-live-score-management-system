@@ -1,0 +1,47 @@
+/* [project]/src/features/auth/ui/css/Button.module.css [app-client] (css) */
+.Button-module__0YnCUW__button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .25s;
+  display: flex;
+}
+
+.Button-module__0YnCUW__primary {
+  color: #fff;
+  background: #0c9c41;
+}
+
+.Button-module__0YnCUW__primary:hover {
+  transform: translateY(-2px);
+}
+
+.Button-module__0YnCUW__secondary {
+  color: #111827;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.Button-module__0YnCUW__secondary:hover {
+  background: #fafafa;
+}
+
+.Button-module__0YnCUW__icon {
+  align-items: center;
+  display: flex;
+}
+
+.Button-module__0YnCUW__disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_Button_module_css_1igg3k2._.single.css.map*/

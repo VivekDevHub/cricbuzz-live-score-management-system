@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/features/auth/ui/css/AuthSwitch.module.css"],"sourcesContent":[".text {\n    margin-top: 32px;\n\n    text-align: center;\n\n    color: #667085;\n\n    font-size: 1rem;\n}\n\n.link {\n    margin-left: 8px;\n\n    color: #0c9c41;\n\n    text-decoration: none;\n\n    font-weight: 600;\n}\n\n.link:hover {\n    text-decoration: underline;\n}"],"names":[],"mappings":"AAAA;;;;;;;AAUA;;;;;;;AAUA"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/features/auth/ui/css/Button.module.css"],"sourcesContent":[".button {\n    width: 100%;\n\n    height: 60px;\n\n    border-radius: 12px;\n\n    border: none;\n\n    cursor: pointer;\n\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 12px;\n\n    font-size: 1rem;\n    font-weight: 600;\n\n    transition: 0.25s ease;\n}\n\n.primary {\n    background: #0c9c41;\n    color: white;\n}\n\n.primary:hover {\n    transform: translateY(-2px);\n}\n\n.secondary {\n    background: white;\n\n    border: 1px solid #e5e7eb;\n\n    color: #111827;\n}\n\n.secondary:hover {\n    background: #fafafa;\n}\n\n.icon {\n    display: flex;\n    align-items: center;\n}\n\n.disabled {\n    opacity: 0.6;\n    cursor: not-allowed;\n    transform: none;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;AAsBA;;;;;AAKA;;;;AAIA;;;;;;AAQA;;;;AAIA;;;;;AAKA"}}]
+}

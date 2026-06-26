@@ -1,0 +1,1846 @@
+/* [project]/src/features/cricket/ui/css/Cricket.module.css [app-client] (css) */
+.Cricket-module__6rc8Va__shell {
+  color: #111827;
+  background: #fbfcfe;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+.Cricket-module__6rc8Va__topbar {
+  z-index: 20;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #fffffff0;
+  border-bottom: 1px solid #e5eaf1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 16px clamp(18px, 5vw, 72px);
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.Cricket-module__6rc8Va__brand {
+  color: #00843d;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__brandMark {
+  border: 2px solid #00843d;
+  border-radius: 50%;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__nav {
+  color: #263654;
+  align-items: center;
+  gap: 28px;
+  font-weight: 600;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__nav a {
+  border-bottom: 2px solid #0000;
+  padding: 10px 0;
+}
+
+.Cricket-module__6rc8Va__nav a:hover, .Cricket-module__6rc8Va__active {
+  color: #00843d;
+  border-bottom-color: #00843d;
+}
+
+.Cricket-module__6rc8Va__main {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  padding: 108px clamp(18px, 5vw, 72px) 44px;
+}
+
+.Cricket-module__6rc8Va__pageHead {
+  border-bottom: 1px solid #e5eaf1;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding-bottom: 26px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__pageTitle {
+  letter-spacing: 0;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.1;
+}
+
+.Cricket-module__6rc8Va__muted {
+  color: #60708d;
+}
+
+.Cricket-module__6rc8Va__toolbar {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__search {
+  color: #60708d;
+  background: #fff;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+  min-width: min(390px, 100%);
+  padding: 14px 16px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__search input {
+  color: #111827;
+  width: 100%;
+  font: inherit;
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.Cricket-module__6rc8Va__tabs {
+  gap: 16px;
+  padding: 18px 0 26px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.Cricket-module__6rc8Va__tab {
+  color: #415173;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 700;
+}
+
+.Cricket-module__6rc8Va__tab:hover, .Cricket-module__6rc8Va__tabActive {
+  color: #00843d;
+  background: #e9f7ef;
+}
+
+.Cricket-module__6rc8Va__grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__stack {
+  gap: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__card {
+  background: #fff;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px #0f172a0a;
+}
+
+.Cricket-module__6rc8Va__seriesCard, .Cricket-module__6rc8Va__matchCard {
+  grid-template-columns: 260px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__banner {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #005f2f, #0ba65b);
+  border-radius: 8px;
+  place-items: center;
+  min-height: 132px;
+  font-size: 20px;
+  font-weight: 900;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__banner img, .Cricket-module__6rc8Va__avatar img, .Cricket-module__6rc8Va__teamLogo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Cricket-module__6rc8Va__truncate, .Cricket-module__6rc8Va__lineClamp {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Cricket-module__6rc8Va__lineClamp {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.Cricket-module__6rc8Va__badge {
+  color: #00843d;
+  background: #e8f7ee;
+  border-radius: 6px;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 9px;
+  font-size: 11px;
+  font-weight: 800;
+  display: inline-flex;
+}
+
+.Cricket-module__6rc8Va__badgeWarning {
+  color: #d76b00;
+  background: #fff2df;
+}
+
+.Cricket-module__6rc8Va__badgeMuted {
+  color: #475569;
+  background: #eef2f7;
+}
+
+.Cricket-module__6rc8Va__stats {
+  align-items: center;
+  gap: 28px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__stat {
+  text-align: center;
+  min-width: 74px;
+}
+
+.Cricket-module__6rc8Va__stat strong {
+  font-size: 18px;
+  display: block;
+}
+
+.Cricket-module__6rc8Va__button {
+  color: #00843d;
+  cursor: pointer;
+  min-height: 44px;
+  box-shadow: none;
+  background: #fff;
+  border: 1px solid #009447;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 22px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: box-shadow .2s, background .2s, color .2s;
+  display: inline-flex;
+}
+
+.Cricket-module__6rc8Va__button:hover {
+  box-shadow: 0 10px 24px #00843d24;
+}
+
+.Cricket-module__6rc8Va__primary {
+  color: #fff;
+  background: #00843d;
+}
+
+.Cricket-module__6rc8Va__matchCard {
+  grid-template-columns: minmax(230px, 1fr) minmax(260px, .72fr) minmax(230px, 1fr) minmax(240px, .78fr);
+  column-gap: 28px;
+}
+
+.Cricket-module__6rc8Va__simpleMatchCard {
+  text-align: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 18px;
+  padding: 34px 24px 26px;
+  position: relative;
+}
+
+.Cricket-module__6rc8Va__matchStatusTag {
+  color: #d76b00;
+  background: #fff2df;
+  border-radius: 6px;
+  align-items: center;
+  padding: 5px 9px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-flex;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.Cricket-module__6rc8Va__matchStatusLIVE {
+  color: #00843d;
+  background: #e8f7ee;
+}
+
+.Cricket-module__6rc8Va__matchStatusCOMPLETED {
+  color: #263654;
+  background: #eef2f7;
+}
+
+.Cricket-module__6rc8Va__matchStatusUPCOMING {
+  color: #d76b00;
+  background: #fff2df;
+}
+
+.Cricket-module__6rc8Va__matchupRow {
+  grid-template-columns: minmax(96px, 1fr) auto minmax(96px, 1fr);
+  align-items: center;
+  gap: clamp(18px, 6vw, 76px);
+  width: min(520px, 100%);
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchupTeam {
+  justify-items: center;
+  gap: 10px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchupLogo {
+  color: #263654;
+  background: #f0f6f3;
+  border: 1px solid #dfe6ef;
+  border-radius: 16px;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  font-weight: 900;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__matchupLogo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Cricket-module__6rc8Va__matchupTeam strong {
+  color: #111827;
+  max-width: 126px;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.Cricket-module__6rc8Va__matchupVs {
+  color: #00843d;
+  background: #e8f7ee;
+  border-radius: 50%;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  font-weight: 900;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__simpleMatchCard .Cricket-module__6rc8Va__button {
+  min-width: 164px;
+}
+
+.Cricket-module__6rc8Va__team {
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__team > div:last-child {
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__teamLogo, .Cricket-module__6rc8Va__avatar {
+  background: #f0f6f3;
+  border: 1px solid #dfe6ef;
+  flex: none;
+  place-items: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__teamLogo {
+  border-radius: 16px;
+  width: 90px;
+  height: 90px;
+}
+
+.Cricket-module__6rc8Va__teamLogo img {
+  border-radius: 16px;
+}
+
+.Cricket-module__6rc8Va__teamLogoLarge {
+  color: #fff;
+  border-radius: 22px;
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__teamLogoLarge img {
+  border-radius: 22px;
+}
+
+.Cricket-module__6rc8Va__avatar {
+  width: 120px;
+  height: 120px;
+}
+
+.Cricket-module__6rc8Va__teamCard {
+  color: inherit;
+  cursor: pointer;
+  padding: 24px;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+  display: block;
+}
+
+.Cricket-module__6rc8Va__teamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #0f172a1a;
+}
+
+.Cricket-module__6rc8Va__teamCardInner {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__teamCardInfo h2 {
+  color: #0f172a;
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Cricket-module__6rc8Va__teamCardInfo .Cricket-module__6rc8Va__muted {
+  color: #64748b;
+  margin: 0;
+  font-size: .85rem;
+}
+
+.Cricket-module__6rc8Va__centerScore {
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+  min-width: 0;
+  max-width: 320px;
+}
+
+.Cricket-module__6rc8Va__centerScore h1 {
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.15;
+}
+
+.Cricket-module__6rc8Va__centerScore h3 {
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.2;
+}
+
+.Cricket-module__6rc8Va__liveCardScore {
+  color: #009447;
+  justify-content: center;
+  margin-top: 4px;
+  font-size: 18px;
+  display: inline-flex;
+}
+
+.Cricket-module__6rc8Va__teamScoreLine {
+  color: #111827;
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.2;
+  display: block;
+}
+
+.Cricket-module__6rc8Va__matchCurrentPlayers {
+  text-align: left;
+  gap: 6px;
+  margin-top: 10px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchCurrentPlayers p {
+  color: #415173;
+  grid-template-columns: 74px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 12px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchCurrentPlayers span {
+  color: #60708d;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__matchCurrentPlayers strong {
+  color: #111827;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__seriesCard h2, .Cricket-module__6rc8Va__team h2, .Cricket-module__6rc8Va__team h3, .Cricket-module__6rc8Va__sidePanel h2 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.Cricket-module__6rc8Va__matchCard > .Cricket-module__6rc8Va__team:first-child {
+  justify-self: end;
+}
+
+.Cricket-module__6rc8Va__matchCard > .Cricket-module__6rc8Va__team:nth-child(3) {
+  justify-self: start;
+}
+
+.Cricket-module__6rc8Va__matchCard > .Cricket-module__6rc8Va__stack:last-child {
+  justify-self: stretch;
+}
+
+.Cricket-module__6rc8Va__detailGrid {
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 22px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__heroCard {
+  grid-template-columns: 280px 1fr auto;
+  align-items: center;
+  gap: 26px;
+  padding: 22px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchHero {
+  grid-template-columns: minmax(190px, 1fr) minmax(280px, 1.25fr) minmax(190px, 1fr);
+  gap: clamp(22px, 4vw, 44px);
+}
+
+.Cricket-module__6rc8Va__matchHero .Cricket-module__6rc8Va__team:last-child {
+  justify-self: end;
+}
+
+.Cricket-module__6rc8Va__matchHero .Cricket-module__6rc8Va__centerScore h1 {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  overflow: visible;
+}
+
+.Cricket-module__6rc8Va__wrapText {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__sidePanel {
+  padding: 24px;
+}
+
+.Cricket-module__6rc8Va__metaList {
+  gap: 16px;
+  margin-top: 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__metaItem {
+  color: #415173;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__metaItem strong {
+  text-align: right;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__playerCard {
+  text-align: center;
+  justify-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 22px;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__playerCard > div:not(.Cricket-module__6rc8Va__avatar), .Cricket-module__6rc8Va__seriesCard > div, .Cricket-module__6rc8Va__matchCard > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.Cricket-module__6rc8Va__playerCard > div:not(.Cricket-module__6rc8Va__avatar) {
+  width: 100%;
+}
+
+.Cricket-module__6rc8Va__playerCard h2 {
+  width: 100%;
+  font-size: clamp(17px, 1.3vw, 20px);
+  line-height: 1.15;
+}
+
+.Cricket-module__6rc8Va__playerStats {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__playerStats > div {
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__playerStats .Cricket-module__6rc8Va__badge {
+  text-align: center;
+  white-space: normal;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.Cricket-module__6rc8Va__tableWrap {
+  overflow-x: auto;
+}
+
+.Cricket-module__6rc8Va__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Cricket-module__6rc8Va__table th, .Cricket-module__6rc8Va__table td {
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid #edf1f6;
+  padding: 13px 16px;
+}
+
+.Cricket-module__6rc8Va__table th {
+  color: #60708d;
+  font-size: 12px;
+}
+
+.Cricket-module__6rc8Va__tablePlayer {
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__tableAvatar {
+  color: #263654;
+  background: #f0f6f3;
+  border: 1px solid #dfe6ef;
+  border-radius: 50%;
+  flex: none;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  font-weight: 900;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__tableAvatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Cricket-module__6rc8Va__truncateCell {
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+  max-width: min(280px, 42vw);
+  display: inline-block;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__colorValue {
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.Cricket-module__6rc8Va__colorValue i {
+  border: 1px solid #d8e1ec;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.Cricket-module__6rc8Va__empty, .Cricket-module__6rc8Va__loader {
+  text-align: center;
+  color: #60708d;
+  padding: 42px;
+}
+
+.Cricket-module__6rc8Va__loader {
+  position: relative;
+}
+
+.Cricket-module__6rc8Va__back {
+  color: #415173;
+  margin-bottom: 18px;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+@media (max-width: 900px) {
+  .Cricket-module__6rc8Va__topbar, .Cricket-module__6rc8Va__pageHead, .Cricket-module__6rc8Va__nav, .Cricket-module__6rc8Va__stats {
+    align-items: stretch;
+  }
+
+  .Cricket-module__6rc8Va__topbar, .Cricket-module__6rc8Va__pageHead {
+    flex-direction: column;
+  }
+
+  .Cricket-module__6rc8Va__nav {
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .Cricket-module__6rc8Va__main {
+    padding-top: 96px;
+  }
+
+  .Cricket-module__6rc8Va__seriesCard, .Cricket-module__6rc8Va__matchCard, .Cricket-module__6rc8Va__matchHero, .Cricket-module__6rc8Va__heroCard, .Cricket-module__6rc8Va__detailGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Cricket-module__6rc8Va__matchCard {
+    text-align: left;
+  }
+
+  .Cricket-module__6rc8Va__matchHero .Cricket-module__6rc8Va__team:last-child {
+    justify-self: stretch;
+  }
+}
+
+.Cricket-module__6rc8Va__matchDetailMain {
+  width: 100%;
+  max-width: none;
+  padding: 112px clamp(16px, 2vw, 36px) 36px;
+}
+
+.Cricket-module__6rc8Va__matchDetailLayout {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__matchMainColumn, .Cricket-module__6rc8Va__matchSideColumn {
+  gap: 16px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveHeroCard {
+  padding: 20px 24px 14px;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__matchHeroMeta {
+  color: #263654;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__matchHeroMeta p, .Cricket-module__6rc8Va__matchHeroBadges {
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__matchHeroBadges span:not(.Cricket-module__6rc8Va__badge) {
+  color: #263654;
+}
+
+.Cricket-module__6rc8Va__socketState {
+  background: #e8f7ee;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 900;
+  color: #00843d !important;
+}
+
+.Cricket-module__6rc8Va__liveScoreGrid {
+  grid-template-columns: minmax(220px, 1fr) minmax(190px, .7fr) minmax(240px, .95fr) minmax(140px, auto);
+  align-items: center;
+  gap: clamp(14px, 1.6vw, 26px);
+  min-width: 0;
+  padding: 34px 0 22px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveTeamStack {
+  gap: 26px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchTeam {
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__matchTeam h2 {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  line-height: 1.15;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__teamStateLabel {
+  color: #00843d;
+  background: #e8f7ee;
+  border-radius: 6px;
+  align-items: center;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-flex;
+}
+
+.Cricket-module__6rc8Va__matchTeamRight {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.Cricket-module__6rc8Va__matchFlag {
+  color: #263654;
+  background: #f7fafc;
+  border: 1px solid #dfe6ef;
+  border-radius: 50%;
+  flex: none;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  font-size: 12px;
+  font-weight: 900;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__matchFlag img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Cricket-module__6rc8Va__matchFlagindia {
+  background: linear-gradient(#ff8a1f 0 33%, #fff 33% 66%, #119447 66% 100%);
+}
+
+.Cricket-module__6rc8Va__matchFlagaustralia {
+  color: #fff;
+  background: radial-gradient(circle at 35% 38%, #fff 0 4px, #0000 5px), #14377d;
+}
+
+.Cricket-module__6rc8Va__matchFlagindia span {
+  color: #17459b;
+  background: #fff;
+  border: 2px solid #17459b;
+  border-radius: 50%;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 8px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter {
+  text-align: center;
+  justify-items: center;
+  gap: 7px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter h1 {
+  font-size: clamp(34px, 4vw, 44px);
+  line-height: 1;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter strong {
+  color: #263654;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter p {
+  color: #009447;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter span {
+  color: red;
+  margin-top: 14px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__liveScoreCenter .Cricket-module__6rc8Va__matchResultText {
+  color: #00843d;
+}
+
+.Cricket-module__6rc8Va__matchResultPanel {
+  color: #263654;
+  background: #e8f7ee;
+  border: 1px solid #bfe9cf;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchResultPanel span {
+  color: #00843d;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__matchResultPanel strong {
+  color: #111827;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.Cricket-module__6rc8Va__currentBatters {
+  gap: 10px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__currentBatters div {
+  background: #fbfcfe;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  gap: 7px;
+  padding: 14px 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__currentBatters span {
+  color: #60708d;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__currentBatters strong {
+  color: #111827;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  font-size: 17px;
+}
+
+.Cricket-module__6rc8Va__currentBatters p {
+  color: #009447;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__rateBox {
+  background: #fff;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__rateBox div {
+  gap: 8px;
+  padding: 16px 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__rateBox div + div {
+  border-left: 1px solid #dfe6ef;
+}
+
+.Cricket-module__6rc8Va__rateBox span {
+  color: #263654;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__rateBox strong {
+  font-size: 19px;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel {
+  background: #fbfcfe;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel header {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel h2 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel header p, .Cricket-module__6rc8Va__matchChatEmpty {
+  color: #60708d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel header span {
+  color: #00843d;
+  background: #e8f7ee;
+  border-radius: 999px;
+  place-items: center;
+  min-width: 28px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 900;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchChatList {
+  align-content: start;
+  gap: 10px;
+  max-height: 170px;
+  padding-right: 4px;
+  display: grid;
+  overflow-y: auto;
+}
+
+.Cricket-module__6rc8Va__matchChatItem {
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchChatItem > strong {
+  color: #fff;
+  background: #009447;
+  border-radius: 50%;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  font-size: 12px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchChatItem h3 {
+  color: #111827;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__matchChatItem h3 span, .Cricket-module__6rc8Va__matchChatItem p {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__matchChatItem time {
+  color: #8a99b2;
+  flex: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.Cricket-module__6rc8Va__matchChatItem p {
+  color: #263654;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.Cricket-module__6rc8Va__matchChatForm {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchChatForm input {
+  color: #111827;
+  min-width: 0;
+  min-height: 42px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid #d8e1ec;
+  border-radius: 8px;
+  outline: 0;
+  padding: 0 12px;
+}
+
+.Cricket-module__6rc8Va__matchChatForm input:focus {
+  border-color: #009447;
+  box-shadow: 0 0 0 3px #00843d1a;
+}
+
+.Cricket-module__6rc8Va__matchChatForm button {
+  color: #fff;
+  cursor: pointer;
+  background: #009447;
+  border: 0;
+  border-radius: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__matchChatForm button:disabled, .Cricket-module__6rc8Va__matchChatForm input:disabled {
+  cursor: not-allowed;
+  opacity: .62;
+}
+
+.Cricket-module__6rc8Va__matchChatPanel small {
+  color: #b91c1c;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__lastOverRow {
+  color: #263654;
+  border-top: 1px solid #dfe6ef;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  font-weight: 800;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__lastOverRow b, .Cricket-module__6rc8Va__commentaryItem b {
+  color: #263654;
+  background: #fff;
+  border: 1px solid #dfe6ef;
+  border-radius: 50%;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__lastOverRow div {
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__lastOverRow i {
+  background: #dfe6ef;
+  width: 1px;
+  height: 18px;
+}
+
+.Cricket-module__6rc8Va__greenText, .Cricket-module__6rc8Va__lastOverRow strong {
+  color: #009447;
+}
+
+.Cricket-module__6rc8Va__boundaryBall, .Cricket-module__6rc8Va__lastOverRow .Cricket-module__6rc8Va__boundaryBall, .Cricket-module__6rc8Va__commentaryItem .Cricket-module__6rc8Va__boundaryBall {
+  color: #fff;
+  background: #009447;
+  border-color: #009447;
+}
+
+.Cricket-module__6rc8Va__matchTabs {
+  border-bottom: 1px solid #dfe6ef;
+  gap: 8px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.Cricket-module__6rc8Va__matchTabs button {
+  color: #263654;
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid #0000;
+  flex: none;
+  padding: 16px 20px;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__matchTabs .Cricket-module__6rc8Va__matchTabActive {
+  color: #009447;
+  border-bottom-color: #009447;
+}
+
+.Cricket-module__6rc8Va__scorecardPanel, .Cricket-module__6rc8Va__commentaryPanel, .Cricket-module__6rc8Va__matchInfoPanel, .Cricket-module__6rc8Va__probabilityPanel, .Cricket-module__6rc8Va__keyPlayersPanel, .Cricket-module__6rc8Va__globalChatPanel, .Cricket-module__6rc8Va__tabPanel {
+  min-width: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__scorecardPanel h2, .Cricket-module__6rc8Va__commentaryPanel h2, .Cricket-module__6rc8Va__matchInfoPanel h2, .Cricket-module__6rc8Va__probabilityPanel h2, .Cricket-module__6rc8Va__keyPlayersPanel h2, .Cricket-module__6rc8Va__globalChatPanel h2, .Cricket-module__6rc8Va__tabPanel h2 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.Cricket-module__6rc8Va__scorecardPanel h2 {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__scorecardPanel h2 .Cricket-module__6rc8Va__matchFlag, .Cricket-module__6rc8Va__probabilityItem .Cricket-module__6rc8Va__matchFlag, .Cricket-module__6rc8Va__keyPlayer .Cricket-module__6rc8Va__matchFlag {
+  width: 28px;
+  height: 28px;
+  font-size: 8px;
+}
+
+.Cricket-module__6rc8Va__scoreTables {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .72fr);
+  gap: 18px;
+  min-width: 0;
+  margin-top: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__inningsStack {
+  gap: 22px;
+  margin-top: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__inningsScorecard {
+  gap: 14px;
+  min-width: 0;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__inningsScorecard + .Cricket-module__6rc8Va__inningsScorecard {
+  border-top: 1px solid #dfe6ef;
+  padding-top: 20px;
+}
+
+.Cricket-module__6rc8Va__inningsHeader {
+  color: #263654;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__inningsHeader h3 {
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.Cricket-module__6rc8Va__inningsHeader strong {
+  color: #009447;
+  flex: none;
+  font-size: 16px;
+}
+
+.Cricket-module__6rc8Va__inningsMeta {
+  color: #60708d;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__inningsMeta strong {
+  color: #263654;
+}
+
+.Cricket-module__6rc8Va__liveTabGrid, .Cricket-module__6rc8Va__statsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveTabGrid div, .Cricket-module__6rc8Va__statsGrid div {
+  background: #fbfcfe;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__liveTabGrid span, .Cricket-module__6rc8Va__statsGrid span {
+  color: #60708d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__liveTabGrid strong, .Cricket-module__6rc8Va__statsGrid strong {
+  color: #111827;
+  font-size: 18px;
+}
+
+.Cricket-module__6rc8Va__liveTabGrid p {
+  color: #415173;
+  line-height: 1.4;
+}
+
+.Cricket-module__6rc8Va__fallList, .Cricket-module__6rc8Va__fantasyList {
+  gap: 14px;
+  margin-top: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chartGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chartBox {
+  background: #fbfcfe;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  min-width: 0;
+  padding: 16px;
+}
+
+.Cricket-module__6rc8Va__chartBoxWide {
+  grid-column: 1 / -1;
+}
+
+.Cricket-module__6rc8Va__chartBox header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__chartBox span {
+  color: #60708d;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__chartBox strong {
+  color: #009447;
+  font-size: 18px;
+}
+
+.Cricket-module__6rc8Va__chartSummaryGrid {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chartSummaryGrid div {
+  background: #fbfcfe;
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 16px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chartSummaryGrid span {
+  color: #60708d;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__chartSummaryGrid strong {
+  color: #111827;
+  font-size: 24px;
+}
+
+.Cricket-module__6rc8Va__fallList > div {
+  border: 1px solid #dfe6ef;
+  border-radius: 8px;
+  gap: 10px;
+  padding: 14px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__fallList h3 {
+  color: #263654;
+  font-size: 15px;
+}
+
+.Cricket-module__6rc8Va__fallList p, .Cricket-module__6rc8Va__fantasyList div {
+  align-items: center;
+  gap: 12px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__fallList p {
+  color: #415173;
+  grid-template-columns: 72px minmax(0, 1fr) auto;
+}
+
+.Cricket-module__6rc8Va__fallList p strong, .Cricket-module__6rc8Va__fantasyList b {
+  color: #009447;
+}
+
+.Cricket-module__6rc8Va__fallList p span, .Cricket-module__6rc8Va__fantasyList span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__fallList p em, .Cricket-module__6rc8Va__fantasyList em {
+  color: #60708d;
+  font-style: normal;
+}
+
+.Cricket-module__6rc8Va__fantasyList div {
+  border-bottom: 1px solid #edf1f6;
+  grid-template-columns: 32px minmax(120px, .7fr) minmax(0, 1fr) 56px;
+  padding: 12px 0;
+}
+
+.Cricket-module__6rc8Va__fantasyList div:last-child {
+  border-bottom: 0;
+}
+
+.Cricket-module__6rc8Va__fantasyList div > strong {
+  color: #00843d;
+  background: #e8f7ee;
+  border-radius: 50%;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__scoreTables .Cricket-module__6rc8Va__tableWrap {
+  min-width: 0;
+}
+
+.Cricket-module__6rc8Va__compactTable th, .Cricket-module__6rc8Va__compactTable td {
+  padding: 11px 10px;
+  font-size: 13px;
+}
+
+.Cricket-module__6rc8Va__compactTable td:not(:first-child), .Cricket-module__6rc8Va__compactTable th:not(:first-child) {
+  text-align: right;
+}
+
+.Cricket-module__6rc8Va__compactTable td:nth-child(2), .Cricket-module__6rc8Va__compactTable th:nth-child(2) {
+  text-align: left;
+}
+
+.Cricket-module__6rc8Va__totalRow {
+  color: #009447;
+  background: #eaf8f0;
+  font-weight: 900;
+}
+
+.Cricket-module__6rc8Va__yetToBat {
+  color: #263654;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.Cricket-module__6rc8Va__commentaryPanel header, .Cricket-module__6rc8Va__globalChatPanel header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__commentaryPanel h2 {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__commentaryPanel button {
+  color: #009447;
+  background: #fff;
+  border: 1px solid #009447;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-weight: 800;
+}
+
+.Cricket-module__6rc8Va__commentaryItem {
+  border-bottom: 1px solid #edf1f6;
+  grid-template-columns: 48px 34px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  font-size: 13px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__commentaryItem:last-child {
+  border-bottom: 0;
+}
+
+.Cricket-module__6rc8Va__matchInfoPanel .Cricket-module__6rc8Va__metaItem {
+  grid-template-columns: minmax(92px, .48fr) minmax(0, 1fr);
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__matchInfoPanel .Cricket-module__6rc8Va__metaItem strong {
+  text-align: left;
+  color: #111827;
+  font-weight: 700;
+}
+
+.Cricket-module__6rc8Va__probabilityItem {
+  color: #263654;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-top: 20px;
+  font-weight: 900;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__probabilityItem > span {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__probabilityItem strong {
+  color: #009447;
+  font-size: 20px;
+}
+
+.Cricket-module__6rc8Va__probabilityItem > div {
+  background: #dfe4eb;
+  border-radius: 999px;
+  grid-column: 1 / -1;
+  height: 9px;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__probabilityItem i {
+  border-radius: inherit;
+  background: #10a452;
+  height: 100%;
+  display: block;
+}
+
+.Cricket-module__6rc8Va__keyPlayer {
+  color: #263654;
+  gap: 14px;
+  margin-top: 22px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__keyPlayer .Cricket-module__6rc8Va__matchFlag {
+  width: 54px;
+  height: 54px;
+}
+
+.Cricket-module__6rc8Va__keyPlayer h3 {
+  color: #111827;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.Cricket-module__6rc8Va__keyPlayer strong {
+  color: #263654;
+  margin-bottom: 8px;
+  font-size: 22px;
+  display: block;
+}
+
+.Cricket-module__6rc8Va__keyPlayer p {
+  color: #263654;
+  gap: 12px;
+  font-size: 13px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__keyPlayer p span {
+  background: #dfe6ef;
+  width: 1px;
+}
+
+.Cricket-module__6rc8Va__globalChatPanel {
+  grid-template-rows: auto minmax(360px, 1fr) auto auto;
+  min-height: calc(100vh - 140px);
+  padding: 0;
+  display: grid;
+  position: sticky;
+  top: 96px;
+  overflow: hidden;
+}
+
+.Cricket-module__6rc8Va__globalChatPanel header {
+  border-bottom: 1px solid #dfe6ef;
+  padding: 20px;
+}
+
+.Cricket-module__6rc8Va__globalChatPanel header p {
+  color: #263654;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 13px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__globalChatPanel header p span {
+  background: #009447;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+
+.Cricket-module__6rc8Va__chatList {
+  align-content: start;
+  gap: 18px;
+  padding: 18px;
+  display: grid;
+  overflow: auto;
+}
+
+.Cricket-module__6rc8Va__chatItem {
+  grid-template-columns: 34px 1fr auto;
+  align-items: start;
+  gap: 12px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chatAvatar {
+  color: #111827;
+  background: linear-gradient(135deg, #ffe3d3, #0ba65b);
+  border-radius: 50%;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  font-weight: 900;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chatItem h3 {
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  display: flex;
+}
+
+.Cricket-module__6rc8Va__chatItem time {
+  color: #8a99b2;
+  font-weight: 500;
+}
+
+.Cricket-module__6rc8Va__chatItem p {
+  color: #111827;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.Cricket-module__6rc8Va__chatItem b {
+  color: #fff;
+  background: #009447;
+  border-radius: 999px;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  font-size: 11px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chatForm {
+  grid-template-columns: 1fr 42px;
+  gap: 10px;
+  padding: 14px 18px;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__chatForm input {
+  color: #e2e8f0;
+  min-width: 0;
+  font: inherit;
+  background: #1a2332;
+  border: 1px solid #1a2332;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.Cricket-module__6rc8Va__chatForm input::placeholder {
+  color: #89a;
+}
+
+.Cricket-module__6rc8Va__chatForm input:focus {
+  border-color: #009447;
+  outline: none;
+}
+
+.Cricket-module__6rc8Va__chatForm button {
+  color: #fff;
+  background: #009447;
+  border: 0;
+  border-radius: 8px;
+  place-items: center;
+  display: grid;
+}
+
+.Cricket-module__6rc8Va__globalChatPanel small {
+  color: #415173;
+  padding: 0 18px 18px;
+  line-height: 1.45;
+}
+
+@media (max-width: 1320px) {
+  .Cricket-module__6rc8Va__liveScoreGrid {
+    grid-template-columns: minmax(220px, 1fr) minmax(190px, .9fr) minmax(220px, 1fr);
+  }
+
+  .Cricket-module__6rc8Va__rateBox {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(260px, 100%);
+  }
+
+  .Cricket-module__6rc8Va__scoreTables, .Cricket-module__6rc8Va__chartGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1240px) {
+  .Cricket-module__6rc8Va__matchDetailLayout {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  }
+}
+
+@media (max-width: 980px) {
+  .Cricket-module__6rc8Va__matchDetailLayout, .Cricket-module__6rc8Va__liveScoreGrid, .Cricket-module__6rc8Va__scoreTables {
+    grid-template-columns: 1fr;
+  }
+
+  .Cricket-module__6rc8Va__matchHeroMeta, .Cricket-module__6rc8Va__lastOverRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Cricket-module__6rc8Va__lastOverRow div {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .Cricket-module__6rc8Va__rateBox {
+    width: min(260px, 100%);
+  }
+
+  .Cricket-module__6rc8Va__inningsHeader, .Cricket-module__6rc8Va__inningsMeta, .Cricket-module__6rc8Va__matchHeroMeta, .Cricket-module__6rc8Va__lastOverRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .Cricket-module__6rc8Va__fantasyList div, .Cricket-module__6rc8Va__fallList p {
+    grid-template-columns: 1fr;
+  }
+
+  .Cricket-module__6rc8Va__matchTeamRight {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .Cricket-module__6rc8Va__matchInfoPanel .Cricket-module__6rc8Va__metaItem {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 560px) {
+  .Cricket-module__6rc8Va__simpleMatchCard {
+    padding: 22px 16px;
+  }
+
+  .Cricket-module__6rc8Va__matchupRow {
+    grid-template-columns: minmax(76px, 1fr) auto minmax(76px, 1fr);
+    gap: 14px;
+  }
+
+  .Cricket-module__6rc8Va__matchupLogo {
+    border-radius: 14px;
+    width: 74px;
+    height: 74px;
+  }
+
+  .Cricket-module__6rc8Va__matchupTeam strong {
+    max-width: 90px;
+    font-size: 15px;
+  }
+
+  .Cricket-module__6rc8Va__matchupVs {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Cricket-module__6rc8Va__liveHeroCard, .Cricket-module__6rc8Va__scorecardPanel, .Cricket-module__6rc8Va__commentaryPanel, .Cricket-module__6rc8Va__matchInfoPanel, .Cricket-module__6rc8Va__probabilityPanel, .Cricket-module__6rc8Va__keyPlayersPanel {
+    padding: 16px;
+  }
+
+  .Cricket-module__6rc8Va__matchFlag {
+    width: 58px;
+    height: 58px;
+  }
+
+  .Cricket-module__6rc8Va__commentaryItem {
+    grid-template-columns: 40px 30px 1fr;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=src_features_cricket_ui_css_Cricket_module_css_1igg3k2._.single.css.map*/

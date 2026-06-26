@@ -1,0 +1,119 @@
+/* [project]/src/features/auth/ui/css/LoginStrucutre.module.css [app-client] (css) */
+.LoginStrucutre-module__MKdmeq__wrapper {
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+.LoginStrucutre-module__MKdmeq__container {
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  min-height: calc(100vh - 100px);
+  padding: 3rem 4rem;
+  display: flex;
+}
+
+.LoginStrucutre-module__MKdmeq__left {
+  flex-direction: column;
+  justify-content: center;
+  width: 550px;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.LoginStrucutre-module__MKdmeq__content {
+  max-width: 450px;
+}
+
+.LoginStrucutre-module__MKdmeq__imageContainer {
+  width: 420px;
+  max-width: 100%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.LoginStrucutre-module__MKdmeq__image {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.LoginStrucutre-module__MKdmeq__right {
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  display: flex;
+}
+
+@media (max-width: 1400px) {
+  .LoginStrucutre-module__MKdmeq__container {
+    gap: 6rem;
+  }
+
+  .LoginStrucutre-module__MKdmeq__left, .LoginStrucutre-module__MKdmeq__right {
+    width: 500px;
+  }
+
+  .LoginStrucutre-module__MKdmeq__imageContainer {
+    width: 380px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .LoginStrucutre-module__MKdmeq__container {
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .LoginStrucutre-module__MKdmeq__left {
+    width: 450px;
+  }
+
+  .LoginStrucutre-module__MKdmeq__right {
+    width: 480px;
+  }
+
+  .LoginStrucutre-module__MKdmeq__imageContainer {
+    width: 340px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .LoginStrucutre-module__MKdmeq__container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .LoginStrucutre-module__MKdmeq__left {
+    display: none;
+  }
+
+  .LoginStrucutre-module__MKdmeq__content {
+    max-width: 100%;
+  }
+
+  .LoginStrucutre-module__MKdmeq__imageContainer {
+    width: 320px;
+    margin-left: 0;
+  }
+
+  .LoginStrucutre-module__MKdmeq__right {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .LoginStrucutre-module__MKdmeq__container {
+    padding: 1.25rem;
+  }
+
+  .LoginStrucutre-module__MKdmeq__right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_LoginStrucutre_module_css_1igg3k2._.single.css.map*/

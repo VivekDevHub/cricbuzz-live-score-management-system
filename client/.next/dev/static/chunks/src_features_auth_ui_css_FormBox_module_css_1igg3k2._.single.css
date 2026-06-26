@@ -1,0 +1,28 @@
+/* [project]/src/features/auth/ui/css/FormBox.module.css [app-client] (css) */
+.FormBox-module__oIS-Uq__formBox {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 520px;
+  padding: 42px;
+  box-shadow: 0 4px 12px #00000008, 0 16px 40px #0000000a;
+}
+
+@media (max-width: 768px) {
+  .FormBox-module__oIS-Uq__formBox {
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FormBox-module__oIS-Uq__formBox {
+    padding: 22px;
+  }
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_FormBox_module_css_1igg3k2._.single.css.map*/

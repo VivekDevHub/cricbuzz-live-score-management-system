@@ -1,0 +1,281 @@
+/* [project]/src/features/landing/ui/css/LiveMatches.module.css [app-client] (css) */
+.LiveMatches-module__gwYBPa__section {
+  background: #fff;
+  padding: 70px 60px;
+  overflow: hidden;
+}
+
+.LiveMatches-module__gwYBPa__header {
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 36px;
+  animation: .8s forwards LiveMatches-module__gwYBPa__fadeUp;
+  display: flex;
+}
+
+.LiveMatches-module__gwYBPa__label {
+  color: #059669;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.LiveMatches-module__gwYBPa__header h2 {
+  color: #020617;
+  letter-spacing: -1px;
+  font-size: 42px;
+}
+
+.LiveMatches-module__gwYBPa__viewButton {
+  cursor: pointer;
+  color: #000;
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 26px;
+  font-weight: 700;
+  transition: all .3s;
+  box-shadow: 0 8px 22px #0f172a14;
+}
+
+.LiveMatches-module__gwYBPa__viewButton:hover {
+  color: #fff;
+  background: #059669;
+  transform: translateY(-3px);
+}
+
+.LiveMatches-module__gwYBPa__matchCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 34px 40px;
+  transition: all .35s;
+  animation: .9s forwards LiveMatches-module__gwYBPa__fadeUp;
+  box-shadow: 0 12px 30px #0f172a0f;
+}
+
+.LiveMatches-module__gwYBPa__matchCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px #0f172a1f;
+}
+
+.LiveMatches-module__gwYBPa__matchInfo {
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  display: flex;
+}
+
+.LiveMatches-module__gwYBPa__liveBadge {
+  color: #ef4444;
+  background: #fee2e2;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-weight: 800;
+  animation: 1.8s infinite LiveMatches-module__gwYBPa__livePulse;
+}
+
+.LiveMatches-module__gwYBPa__scoreRow {
+  grid-template-columns: 1.2fr 1fr 1.5fr 1fr 1.2fr;
+  align-items: center;
+  gap: 20px;
+  display: grid;
+}
+
+.LiveMatches-module__gwYBPa__team {
+  color: #64748b;
+  align-items: center;
+  gap: 18px;
+  font-size: 34px;
+  display: flex;
+}
+
+.LiveMatches-module__gwYBPa__flag {
+  font-size: 42px;
+}
+
+.LiveMatches-module__gwYBPa__score {
+  text-align: center;
+}
+
+.LiveMatches-module__gwYBPa__score h3 {
+  color: #020617;
+  font-size: 44px;
+}
+
+.LiveMatches-module__gwYBPa__score p {
+  color: #64748b;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.LiveMatches-module__gwYBPa__result {
+  text-align: center;
+  color: #059669;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.LiveMatches-module__gwYBPa__statsBox {
+  background: linear-gradient(90deg, #f8fffb, #effdf5, #f8fffb);
+  border-radius: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 90px;
+  padding: 60px 40px;
+  animation: 1s forwards LiveMatches-module__gwYBPa__fadeUp;
+  display: grid;
+}
+
+.LiveMatches-module__gwYBPa__statItem {
+  text-align: center;
+  border-right: 1px solid #d8e6dd;
+  transition: all .3s;
+}
+
+.LiveMatches-module__gwYBPa__statItem:hover {
+  transform: translateY(-8px);
+}
+
+.LiveMatches-module__gwYBPa__statItem:last-child {
+  border-right: none;
+}
+
+.LiveMatches-module__gwYBPa__icon {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+
+.LiveMatches-module__gwYBPa__statItem h3 {
+  color: #059669;
+  margin-bottom: 12px;
+  font-size: 54px;
+}
+
+.LiveMatches-module__gwYBPa__statItem p {
+  color: #111827;
+  font-size: 18px;
+}
+
+@keyframes LiveMatches-module__gwYBPa__fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes LiveMatches-module__gwYBPa__livePulse {
+  0%, 100% {
+    box-shadow: 0 0 #ef444466;
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px #ef444400;
+  }
+}
+
+@media (max-width: 1000px) {
+  .LiveMatches-module__gwYBPa__section {
+    padding: 60px 36px;
+  }
+
+  .LiveMatches-module__gwYBPa__scoreRow {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .LiveMatches-module__gwYBPa__team {
+    justify-content: center;
+  }
+
+  .LiveMatches-module__gwYBPa__statsBox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  .LiveMatches-module__gwYBPa__statItem {
+    border-right: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .LiveMatches-module__gwYBPa__section {
+    padding: 55px 20px;
+  }
+
+  .LiveMatches-module__gwYBPa__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .LiveMatches-module__gwYBPa__label {
+    text-align: center;
+  }
+
+  .LiveMatches-module__gwYBPa__desc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .LiveMatches-module__gwYBPa__header h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .LiveMatches-module__gwYBPa__viewButton {
+    width: 100%;
+  }
+
+  .LiveMatches-module__gwYBPa__matchCard {
+    padding: 26px 18px;
+  }
+
+  .LiveMatches-module__gwYBPa__matchInfo {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .LiveMatches-module__gwYBPa__team {
+    font-size: 28px;
+  }
+
+  .LiveMatches-module__gwYBPa__flag, .LiveMatches-module__gwYBPa__score h3 {
+    font-size: 34px;
+  }
+
+  .LiveMatches-module__gwYBPa__score p {
+    font-size: 14px;
+  }
+
+  .LiveMatches-module__gwYBPa__result {
+    font-size: 16px;
+  }
+
+  .LiveMatches-module__gwYBPa__statsBox {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-top: 60px;
+    padding: 40px 24px;
+  }
+
+  .LiveMatches-module__gwYBPa__statItem h3 {
+    font-size: 42px;
+  }
+
+  .LiveMatches-module__gwYBPa__statItem p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=src_features_landing_ui_css_LiveMatches_module_css_1igg3k2._.single.css.map*/

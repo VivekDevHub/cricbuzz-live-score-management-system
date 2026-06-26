@@ -1,0 +1,78 @@
+/* [project]/src/features/shared/ui/css/Button.module.css [app-client] (css) */
+.Button-module__0ug_wa__primary, .Button-module__0ug_wa__secondary, .Button-module__0ug_wa__outline {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .3s;
+  display: inline-flex;
+}
+
+.Button-module__0ug_wa__primary {
+  background: var(--primary, #059669);
+  color: #fff;
+  box-shadow: 0 10px 25px #05966940;
+}
+
+.Button-module__0ug_wa__primary:hover {
+  background: var(--secondary, #047857);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px #05966959;
+}
+
+.Button-module__0ug_wa__secondary {
+  color: #111827;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.Button-module__0ug_wa__secondary:hover {
+  border-color: var(--primary, #059669);
+  color: var(--primary, #059669);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px #0f172a14;
+}
+
+.Button-module__0ug_wa__outline {
+  border: 2px solid var(--primary, #059669);
+  color: var(--primary, #059669);
+  background: none;
+}
+
+.Button-module__0ug_wa__outline:hover {
+  background: var(--primary, #059669);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.Button-module__0ug_wa__primary:disabled, .Button-module__0ug_wa__secondary:disabled, .Button-module__0ug_wa__outline:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.Button-module__0ug_wa__primary:active, .Button-module__0ug_wa__secondary:active, .Button-module__0ug_wa__outline:active {
+  transform: scale(.98);
+}
+
+@media (max-width: 768px) {
+  .Button-module__0ug_wa__primary, .Button-module__0ug_wa__secondary, .Button-module__0ug_wa__outline {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Button-module__0ug_wa__primary, .Button-module__0ug_wa__secondary, .Button-module__0ug_wa__outline {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=src_features_shared_ui_css_Button_module_css_1igg3k2._.single.css.map*/

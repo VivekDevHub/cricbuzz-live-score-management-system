@@ -1,0 +1,21 @@
+/* [project]/src/features/auth/ui/css/Seperator.module.css [app-client] (css) */
+.Seperator-module__V_Ycvq__separator {
+  align-items: center;
+  gap: 16px;
+  margin: 32px 0;
+  display: flex;
+}
+
+.Seperator-module__V_Ycvq__line {
+  background: #e5e7eb;
+  flex: 1;
+  height: 1px;
+}
+
+.Seperator-module__V_Ycvq__separator span {
+  color: #98a2b3;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_Seperator_module_css_1igg3k2._.single.css.map*/

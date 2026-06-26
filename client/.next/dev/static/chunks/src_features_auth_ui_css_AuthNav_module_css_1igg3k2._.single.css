@@ -1,0 +1,27 @@
+/* [project]/src/features/auth/ui/css/AuthNav.module.css [app-client] (css) */
+.AuthNav-module__WsZjeG__nav {
+  z-index: 10;
+  align-items: center;
+  width: 100%;
+  padding: 40px 48px 0;
+  display: flex;
+  position: relative;
+}
+
+.AuthNav-module__WsZjeG__logo {
+  object-fit: contain;
+  width: auto;
+  height: 56px;
+}
+
+@media (max-width: 768px) {
+  .AuthNav-module__WsZjeG__nav {
+    padding: 24px 24px 0;
+  }
+
+  .AuthNav-module__WsZjeG__logo {
+    height: 44px;
+  }
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_AuthNav_module_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,28 @@
+/* [project]/src/features/auth/ui/css/AuthHeading.module.css [app-client] (css) */
+.AuthHeading-module__3pvwVq__heading {
+  color: #09090b;
+  letter-spacing: -2px;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: .95;
+}
+
+@media (max-width: 1200px) {
+  .AuthHeading-module__3pvwVq__heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AuthHeading-module__3pvwVq__heading {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AuthHeading-module__3pvwVq__heading {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=src_features_auth_ui_css_AuthHeading_module_css_1igg3k2._.single.css.map*/
