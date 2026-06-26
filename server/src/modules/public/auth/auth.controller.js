@@ -1,0 +1,217 @@
+// Importing modules
+import { refreshConstants } from "../../../shared/constants/cookies.constants.js";
+import ApiResponse from "../../../shared/utils/ApiResponse.utils.js";
+import { generateAccessToken } from "../../../shared/utils/token.util.js";
+import AuthService from "./auth.service.js";
+import envs from "../../../shared/config/env.config.js";
+import logger from "../../../shared/config/logger.config.js";
+
+// class to handle all the controller logic of the auth module
+class AuthController {
+
+    constructor() {
+
+        // creating the auth service
+        this.authService = new AuthService();
+    }
+
+    signupController = async (req, res) => {
+
+        // accepting the data 
+        const { name, email, password } = req.body;
+
+        // calling the signup service
+        const response = await this.authService.signupService(name, email, password);
+
+        // setting the cookies in the response 
+        res.cookie("glpddp_refreshToken", response.refreshToken, refreshConstants);
+
+        // returing the response 
+        return ApiResponse(res, 201, "User created successfully", response.user);
+    }
+
+    loginController = async (req, res) => {
+
+        // accepting the data
+        const { email, password } = req.body;
+
+        // calling the login service
+        const response = await this.authService.loginService(email, password);
+
+        // setting the cookies in the response
+        res.cookie("glpddp_refreshToken", response.refreshToken, refreshConstants);
+
+        // returning the response
+        return ApiResponse(res, 200, "User logged in successfully", response.user);
+    }
+
+    verifyController = async (req, res) => {
+
+        // accepting the data
+        const { otp } = req.body;
+        const userId = req.user.id;
+
+        if (req.user.isVerified) {
+
+            // returning the response
+            return ApiResponse(res, 200, "Email already verified");
+
+        }
+
+        // calling the verify service
+        const user =await this.authService.verifyService(userId, otp);
+
+        // Change the access token to reflect the change in the isVerified field
+        const accessToken = generateAccessToken(user);
+
+        // returning the response
+        return ApiResponse(res, 200, "Email verified successfully", { accessToken });
+
+    }
+
+    resendOTPController = async (req, res) => {
+
+        // accepting the data
+        const userId = req.user.id;
+        const email = req.user.email;
+
+        if (req.user.isVerified) {
+            return ApiResponse(res, 400, "Email already verified");
+        }
+
+        // calling the resend otp service
+        await this.authService.resendOtpService(userId, email);
+
+        // returning the response
+        return ApiResponse(res, 200, "OTP sent successfully");
+    }
+
+    logoutController = async (req, res) => {
+
+        // accepting the data
+        const userId = req.user.id;
+        const refreshToken = req.refreshToken;
+        const sessionId = req.sessionId;
+
+        // calling the logout service
+        await this.authService.logoutService(userId, refreshToken, sessionId);
+
+        // clearing the cookies in the response
+        res.clearCookie("glpddp_refreshToken", refreshConstants);
+
+        // returning the response
+        return ApiResponse(res, 204, "");
+    }
+
+    logoutAllController = async (req, res) => {
+
+        // accepting the data
+        const userId = req.userId;
+
+        // calling the logout all service
+        await this.authService.logoutAllService(userId);
+
+        // returning the response
+        return ApiResponse(res, 204, "");
+    }
+
+    refreshController = async (req, res) => {
+
+        // accepting the data
+        const refreshToken = req.refreshToken;
+        const sessionId = req.sessionId;
+        const userId = req.userId;
+
+        // calling the refresh service
+        const response = await this.authService.refreshService(userId, refreshToken, sessionId);
+
+        // setting the cookies in the response
+        res.cookie("glpddp_refreshToken", response.newrefreshToken, refreshConstants);
+
+        // returning the response
+        return ApiResponse(res, 200, "Token refreshed successfully", { accessToken: response.newaccessToken });
+    }
+
+    forgetController = async (req, res) => {
+
+        // accepting the data
+        const { email } = req.body;
+
+        // calling the forget service
+        await this.authService.forgetService(email);
+
+        // returning the response
+        return ApiResponse(res, 200, "Password reset link sent successfully");
+    }
+
+    resetController = async (req, res) => {
+
+        // accepting the data
+        const { token, password } = req.body;
+
+        // calling the reset service
+        await this.authService.resetService(token, password);
+
+        // returning the response
+        return ApiResponse(res, 200, "Password reset successfully");
+    }
+
+    meController = async (req, res) => {
+
+        // accepting the data
+        const userId = req.userId;
+
+        logger.info(userId)
+
+        // calling the getMe service
+        const user = await this.authService.getMeService(userId);
+
+        // returning the response
+        return ApiResponse(res, 200, "User fetched successfully", user);
+    }
+
+    googleAuthController = async (req, res) => {
+
+        // accepting the data
+        const { credential } = req.body;
+
+        // calling the google auth service
+        const response = await this.authService.googleAuthService(credential);
+
+        // setting the cookies in the response
+        res.cookie("glpddp_refreshToken", response.refreshToken, refreshConstants);
+
+        // returning the response
+        return ApiResponse(res, 200, "Google auth successful", response.user);
+    }
+
+    googleRedirectController = async (req, res) => {
+
+        // getting the google auth url
+        const url = this.authService.getGoogleAuthUrl();
+
+        // redirecting to google
+        res.redirect(url);
+    }
+
+    googleCallbackController = async (req, res) => {
+
+        // accepting the data
+        const { code, error } = req.query;
+
+        if (error || !code) {
+            return res.redirect(`${envs.FRONTEND_URL}/login?google=failed`);
+        }
+
+        // calling the google callback service
+        const response = await this.authService.googleCallbackService(code);
+
+        // setting the cookies in the response
+        res.cookie("glpddp_refreshToken", response.refreshToken, refreshConstants);
+
+        // redirecting to the frontend
+        res.redirect(envs.FRONTEND_URL);
+    }
+}
+
+export default AuthController;

@@ -1,0 +1,3 @@
+module.exports=[63907,a=>{"use strict";var b=a.i(72131),c=a.i(50944),d=a.i(14174);let e=["/login","/signup","/forgot-password"],f=/^\/reset-password\//;a.s(["default",0,({children:a})=>{let g=(0,c.useRouter)(),h=(0,c.usePathname)(),{isAuthenticated:i,user:j}=(0,d.useSelector)(a=>a.auth),k=j?.isVerified,l=e.includes(h)||f.test(h),m="/verify-email"===h;return((0,b.useEffect)(()=>{!i&&m?g.replace("/login"):i&&k&&l?g.replace("/"):i&&!k&&l?g.replace("/verify-email"):i&&k&&m&&g.replace("/")},[i,k,h,g,l,m]),!i&&m||i&&k&&l||i&&!k&&l||i&&k&&m)?null:a}])}];
+
+//# sourceMappingURL=src_features_auth_ui_jsx_AuthGuard_jsx_117z1im._.js.map

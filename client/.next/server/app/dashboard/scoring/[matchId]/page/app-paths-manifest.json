@@ -1,0 +1,3 @@
+{
+  "/dashboard/scoring/[matchId]/page": "app/dashboard/scoring/[matchId]/page.js"
+}

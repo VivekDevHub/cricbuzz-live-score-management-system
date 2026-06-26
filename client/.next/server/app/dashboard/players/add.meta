@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/players/layout,_N_T_/dashboard/players/add/layout,_N_T_/dashboard/players/add/page,_N_T_/dashboard/players/add"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/dashboard/players/add/__PAGE__",
+    "/dashboard/players/add",
+    "/dashboard/players",
+    "/dashboard",
+    "/_index",
+    "/_head"
+  ]
+}
