@@ -74,10 +74,7 @@ export default function Navbar() {
                 <Button variant="primary">Dashboard</Button>
               </Link>
             )}
-            <Button
-              variant="secondary"
-              onClick={() => logoutMutation.mutate()}
-            >
+            <Button variant="secondary" onClick={() => logoutMutation.mutate()}>
               Logout
             </Button>
           </>
