@@ -4,26 +4,26 @@ import { finishAuthCheck, setUser } from "../state/authSlice";
 import axiosInstance from "@/lib/axios";
 
 const useAuthInitializer = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        const checkAuth = async () => {
-            try {
-                const { data } = await axiosInstance.get("/auth/me");
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const { data } = await axiosInstance.get("/auth/me");
 
-                if (data?.data) {
-                    const { accessToken, ...user } = data.data;
-                    dispatch(setUser({ user, accessToken }));
-                }
-            } catch {
-                // User is not logged in or session expired - do nothing
-            } finally {
-                dispatch(finishAuthCheck());
-            }
-        };
+        if (data?.data) {
+          const { accessToken, ...user } = data.data;
+          dispatch(setUser({ user, accessToken }));
+        }
+      } catch {
+        // User is not logged in or session expired - do nothing
+      } finally {
+        dispatch(finishAuthCheck());
+      }
+    };
 
-        checkAuth();
-    }, [dispatch]);
+    checkAuth();
+  }, [dispatch]);
 };
 
 export default useAuthInitializer;
