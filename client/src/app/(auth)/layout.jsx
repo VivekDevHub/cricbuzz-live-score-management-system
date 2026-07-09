@@ -1,12 +1,8 @@
-import AuthGuard from '@/features/auth/ui/jsx/AuthGuard';
-import React from 'react';
+import AuthGuard from "@/features/auth/ui/jsx/AuthGuard";
+import React from "react";
 
 const layout = ({ children }) => {
-  return (
-    <AuthGuard>
-      { children }
-    </AuthGuard>
-  )
-}
+  return <AuthGuard>{children}</AuthGuard>;
+};
 
-export default layout
+export default layout;
