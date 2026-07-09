@@ -1,9 +1,9 @@
 import ForgotPassword from "@/features/auth/ui/jsx/ForgotPassword";
 
 export const metadata = {
-    title: "Forgot Password"
+  title: "Forgot Password",
 };
 
 export default function Page() {
-    return <ForgotPassword />;
+  return <ForgotPassword />;
 }
