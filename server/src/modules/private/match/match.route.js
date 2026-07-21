@@ -2,7 +2,7 @@ import express from "express";
 import MatchController from "./match.controller.js";
 import asyncHandler from "../../../shared/utils/asynchandler.util.js";
 import validateErrors from "../../../shared/middlewares/validateErrors.middleware.js";
- 
+
 import {
   createMatchValidator,
   updateMatchValidator,
@@ -28,7 +28,7 @@ router.post(
   "/",
   createMatchValidator,
   validateErrors,
-  asyncHandler(matchController.createMatch)
+  asyncHandler(matchController.createMatch),
 );
 
 /**
@@ -40,7 +40,7 @@ router.patch(
   "/:id",
   updateMatchValidator,
   validateErrors,
-  asyncHandler(matchController.updateMatch)
+  asyncHandler(matchController.updateMatch),
 );
 
 /**
@@ -52,7 +52,7 @@ router.delete(
   "/:id",
   deleteMatchValidator,
   validateErrors,
-  asyncHandler(matchController.deleteMatch)
+  asyncHandler(matchController.deleteMatch),
 );
 
 /**
@@ -64,7 +64,7 @@ router.patch(
   "/:id/publish",
   publishMatchValidator,
   validateErrors,
-  asyncHandler(matchController.publishMatch)
+  asyncHandler(matchController.publishMatch),
 );
 
 /**
@@ -76,7 +76,7 @@ router.patch(
   "/:id/toss",
   updateTossValidator,
   validateErrors,
-  asyncHandler(matchController.updateToss)
+  asyncHandler(matchController.updateToss),
 );
 
 /**
@@ -88,7 +88,7 @@ router.patch(
   "/:id/playing-xi",
   selectPlayingXIValidator,
   validateErrors,
-  asyncHandler(matchController.selectPlayingXI)
+  asyncHandler(matchController.selectPlayingXI),
 );
 
 /**
@@ -100,7 +100,7 @@ router.patch(
   "/:id/start",
   startMatchValidator,
   validateErrors,
-  asyncHandler(matchController.startMatch)
+  asyncHandler(matchController.startMatch),
 );
 
 /**
@@ -112,7 +112,7 @@ router.patch(
   "/:id/innings-break",
   inningsBreakValidator,
   validateErrors,
-  asyncHandler(matchController.pauseForInningsBreak)
+  asyncHandler(matchController.pauseForInningsBreak),
 );
 
 /**
@@ -124,7 +124,7 @@ router.patch(
   "/:id/second-innings",
   inningsBreakValidator,
   validateErrors,
-  asyncHandler(matchController.startSecondInnings)
+  asyncHandler(matchController.startSecondInnings),
 );
 
 /**
@@ -132,20 +132,14 @@ router.patch(
  * @desc Mark match as abandoned
  * @access Private (handled by parent router)
  */
-router.patch(
-  "/:id/abandon",
-  asyncHandler(matchController.abandonMatch)
-);
+router.patch("/:id/abandon", asyncHandler(matchController.abandonMatch));
 
 /**
  * @route PATCH /api/matches/:id/no-result
  * @desc Mark match as no result
  * @access Private (handled by parent router)
  */
-router.patch(
-  "/:id/no-result",
-  asyncHandler(matchController.markNoResult)
-);
+router.patch("/:id/no-result", asyncHandler(matchController.markNoResult));
 
 /**
  * @route PATCH /api/matches/:id/complete
@@ -156,7 +150,7 @@ router.patch(
   "/:id/complete",
   completeMatchValidator,
   validateErrors,
-  asyncHandler(matchController.completeMatch)
+  asyncHandler(matchController.completeMatch),
 );
 
 export default router;
