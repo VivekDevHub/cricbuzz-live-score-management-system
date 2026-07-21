@@ -1,6 +1,9 @@
 import { body, param } from "express-validator";
 import mongoose from "mongoose";
-import { MATCH_STATUS, MATCH_TYPES } from "../../../shared/constants/match.constatnts.js";
+import {
+  MATCH_STATUS,
+  MATCH_TYPES,
+} from "../../../shared/constants/match.constatnts.js";
 
 /**
  * Common MongoDB ObjectId validator
@@ -68,10 +71,7 @@ export const createMatchValidator = [
     return true;
   }),
 
-  body("venue")
-    .trim()
-    .notEmpty()
-    .withMessage("Venue is required"),
+  body("venue").trim().notEmpty().withMessage("Venue is required"),
 
   body("startTime")
     .notEmpty()
@@ -114,15 +114,9 @@ export const updateMatchValidator = [
     .isIn(Object.values(MATCH_STATUS))
     .withMessage("Invalid match status"),
 
-  body("startTime")
-    .optional()
-    .isISO8601()
-    .withMessage("Invalid start time"),
+  body("startTime").optional().isISO8601().withMessage("Invalid start time"),
 
-  body("endTime")
-    .optional()
-    .isISO8601()
-    .withMessage("Invalid end time"),
+  body("endTime").optional().isISO8601().withMessage("Invalid end time"),
 
   ...playingXIValidator,
 ];
@@ -130,16 +124,12 @@ export const updateMatchValidator = [
 /**
  * Delete Match
  */
-export const deleteMatchValidator = [
-  objectIdValidator("id"),
-];
+export const deleteMatchValidator = [objectIdValidator("id")];
 
 /**
  * Publish Match
  */
-export const publishMatchValidator = [
-  objectIdValidator("id"),
-];
+export const publishMatchValidator = [objectIdValidator("id")];
 
 /**
  * Update Toss
@@ -206,16 +196,12 @@ export const selectPlayingXIValidator = [
 /**
  * Start Match
  */
-export const startMatchValidator = [
-  objectIdValidator("id"),
-];
+export const startMatchValidator = [objectIdValidator("id")];
 
 /**
  * Innings Break
  */
-export const inningsBreakValidator = [
-  objectIdValidator("id"),
-];
+export const inningsBreakValidator = [objectIdValidator("id")];
 
 /**
  * Complete Match
@@ -229,10 +215,7 @@ export const completeMatchValidator = [
     .custom((value) => mongoose.Types.ObjectId.isValid(value))
     .withMessage("Invalid winner ID"),
 
-  body("result")
-    .trim()
-    .notEmpty()
-    .withMessage("Result is required"),
+  body("result").trim().notEmpty().withMessage("Result is required"),
 
   body("manOfTheMatch")
     .optional()
