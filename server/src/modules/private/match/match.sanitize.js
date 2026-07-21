@@ -1,39 +1,39 @@
 export const sanitizeMatch = (match) => ({
-    id: match._id,
+  id: match._id,
 
-    series: match.seriesId,
+  series: match.seriesId,
 
-    matchNumber: match.matchNumber,
-    title: match.title,
+  matchNumber: match.matchNumber,
+  title: match.title,
 
-    venue: match.venue,
-    city: match.city,
-    country: match.country,
+  venue: match.venue,
+  city: match.city,
+  country: match.country,
 
-    startTime: match.startTime,
-    endTime: match.endTime,
+  startTime: match.startTime,
+  endTime: match.endTime,
 
-    matchType: match.matchType,
-    status: match.status,
+  matchType: match.matchType,
+  status: match.status,
 
-    team1: match.team1,
-    team2: match.team2,
+  team1: match.team1,
+  team2: match.team2,
 
-    tossWinner: match.tossWinner,
-    tossDecision: match.tossDecision,
+  tossWinner: match.tossWinner,
+  tossDecision: match.tossDecision,
 
-    playingXI: match.playingXI,
+  playingXI: match.playingXI,
 
-    currentInnings: match.currentInnings,
-    oversPerInnings: match.oversPerInnings,
+  currentInnings: match.currentInnings,
+  oversPerInnings: match.oversPerInnings,
 
-    winner: match.winner,
-    result: match.result,
-    manOfTheMatch: match.manOfTheMatch,
+  winner: match.winner,
+  result: match.result,
+  manOfTheMatch: match.manOfTheMatch,
 
-    createdBy: match.createdBy,
-    updatedBy: match.updatedBy,
+  createdBy: match.createdBy,
+  updatedBy: match.updatedBy,
 
-    createdAt: match.createdAt,
-    updatedAt: match.updatedAt,
+  createdAt: match.createdAt,
+  updatedAt: match.updatedAt,
 });
